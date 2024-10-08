@@ -1,0 +1,9 @@
+[Unit]
+Description=Keep track of the cpu usage via /tmp/cpu_usage
+
+[Service]
+Type=simple
+ExecStart=/var/improved_load_avg
+
+[Install]
+WantedBy=multi-user.target
